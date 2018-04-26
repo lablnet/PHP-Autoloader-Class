@@ -15,11 +15,11 @@ Validiate the files
 # Simple Example 
 ## for more detail see index.php
 
-	`
+	
 	require the files
 	require_once 'core/init.php';
 	//loading filess
 	Autoloader::Load('path/to/files');
-	`
+	
 
  
