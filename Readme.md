@@ -1,13 +1,13 @@
-# PHP Autoloader class
-## This package can auto load files either classes or libs form path that provided.
+# PHP Simple Autoloader class
+## This package can auto load classes form path that provided.
 
 ## Feature
 
- 1. Autloading the files
-
+ 1. Autloading the classes
+ 2. Autoloading classes with namespace
 
 # Description
-This package can auto load files either classes or libs form path that provided
+This package can auto load classes form path that provided.
 
 ## TODO
 Validiate the files
@@ -16,9 +16,9 @@ Validiate the files
 ## for more detail see index.php
 
 	
-	require the files
+	//require the files
 	require_once 'core/init.php';
-	//loading filess
+	//loading classes
 	Autoloader::Load('path/to/files');
 	
 

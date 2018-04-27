@@ -3,7 +3,7 @@ Class A{
 
 	public function __construct(){
 
-		echo "<h1>CLasses Autoloading examples</h1><br>Hay! i'm constructor of class 'A'";
+		echo "<h1>Classes Autoloading examples</h1><br>Hay! i'm constructor of class 'A'";
 
 	}
 

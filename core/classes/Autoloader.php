@@ -13,7 +13,7 @@ class Autoloader
 {
 
 	//Default extension for files
-	private $extension = '.php';
+	private static $extension = '.php';
 
 	//for setting path
 	private static $path = '/';
@@ -32,43 +32,16 @@ class Autoloader
 
 			Autoloader::$path = $path.'/';
 
-			$files = Autoloader::ScanFile();
+			spl_autoload_register(
 
-			foreach ($files as $file) {
+				function($file){
 
-				if(is_file(Autoloader::$path.$file)){
+					$file = str_replace("\\", DIRECTORY_SEPARATOR, $file);
 
-					require_once Autoloader::$path.$file; 
+					require_once Autoloader::$path.$file.Autoloader::$extension;
 
-				}else{
-
-					return false;
 				}
-
-			}
-
-
-		}else{
-
-			return false;
-
-		}
-
-	}
-
-	 /**
-     * Scan the directory
-	 *
-     * @return boolean | mix-data
-    */
-	public static function ScanFile(){
-
-		if(!empty(Autoloader::$path)){
-
-		$disk_scan = array_diff(scandir(Autoloader::$path,1),array('..','.'));
-		
-		return $disk_scan;
-
+			);
 
 		}else{
 

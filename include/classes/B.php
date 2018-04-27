@@ -10,7 +10,7 @@ Class B{
 	public function __construct(){
 		self::InitObject();
 
-		echo "<br> Hay! i'm constructor of class 'B' <br> And you see you only Create instance of CLass B class A auto included extended thanks for using this class";
+		echo "<br> Hay! i'm constructor of class 'B' <br> And you see you only Create instance of class B class A auto included extended thanks for using this class";
 
 
 	}
