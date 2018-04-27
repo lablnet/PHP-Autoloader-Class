@@ -7,13 +7,17 @@ Class Hello{
 	}
 	public static function hello(){
 
-		echo "Hello World";
+		(function(){
+			echo "Hello World";
+		})();
 
 	}
 
 	public static function hello2(){
 
-		echo "Hello World 2";
+		(function(){
+			echo "Hello World 2";
+		})();
 
 	}
 }
