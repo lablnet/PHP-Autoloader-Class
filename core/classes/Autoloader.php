@@ -26,7 +26,7 @@ class Autoloader
      *
      * @return boolean | mix-data
     */
-	public function Load($path){
+	public static function Load($path){
 
 		if(isset($path) && !empty($path)){
 
