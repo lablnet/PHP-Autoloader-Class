@@ -9,8 +9,6 @@
 # Description
 This package can auto load classes form path that provided.
 
-## TODO
-Validiate the files
 
 # Simple Example 
 ## for more detail see index.php
