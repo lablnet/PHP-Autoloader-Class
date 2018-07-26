@@ -1,21 +1,22 @@
-<?php 
+<?php
+
 require_once 'core/init.php';
-  
+
 //loading Classes filess
 Autoloader::Load('include/classes');
 
 echo Hello::hello();
 
-echo "<br>"; 
+echo '<br>';
 
 echo Hello::hello2();
 
-echo "<br>"; 
+echo '<br>';
 
-$B = new B;
+$B = new B();
 
-$c = new php\C;
+$c = new php\C();
 
-$d = new php\dynamic\D;
+$d = new php\dynamic\D();
 
-$e = new php\dynamic\core\hack\E;
+$e = new php\dynamic\core\hack\E();
